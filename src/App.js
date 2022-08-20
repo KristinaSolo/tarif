@@ -1,15 +1,25 @@
 
 import './App.css';
-import Cards from './component/Cards';
-import {tarifs} from './component/data/tarifs'
+import Cards1 from './component/Cards1.jsx';
+import Cards2 from './component/Cards2.jsx';
+import Cards3 from './component/Cards3.jsx';
+import Cards4 from './component/Cards4.jsx';
+
+
 
 
 function App() {
   return (
     <div className="App">
     {
-      tarifs.map((tarif) =>
-      <Cards tarif={tarif.tarif} cost={tarif.cost} gigabytes={tarif.gigabytes} text={tarif.text}/>)
+      <>
+     <Cards1/>
+     <Cards2/>
+     <Cards3/>
+     <Cards4/>
+
+   </>
+  
     }
      
     </div>
